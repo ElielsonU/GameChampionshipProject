@@ -4,20 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESports Championship</title>
+    <title> RZX ESports Championship</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="icons/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@100;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <!-- OnHover: mostrar descricao -->
         <h1>RZX Championship</h1>
     </header>
-    <form action="">
+    
+    <div id="description">
+        <p>
+        The RZX Championshipis an event that takes place annualy.It is an event that takes place annually. Our goal is to create a fun gaming community. Anyone can apply, don't miss this chance.
+        </p>
+    </div>
+    
+    <div class="eventDate">
+        <!-- OnClick: marcar data no calendario -->
+        <p>Date: <span>22/12/10</span></p>
+        <var></var>
+    </div>
+
+    <div class="registerForm">
+        <form>
+        <h2>Register</h2>
+        <div class="inputs">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" minlength="8" required>
+        </div>
+        <div class="select_box">
+           <select name="game" id="game" required>
+                <option value="">Choice a game</option>
+                <option value="cs">Counter Strike</option>
+                <option value="lol">League of Legends</option>
+                <option value="valorant">Valorant</option>
+                <option value="pubg">PUBG</option>
+            </select> 
+        </div>
+        <div class="buttons">
+            <a href="#name" class="loginButton">Login</a>
+            <button id="registerButton">Register</button>
+        </div>
     </form>
-    <footer></footer>
-    </script src="js/script.js">
+    </div>
+
+    <footer>
+        <p>Made by:<a href="https://github.com/ElielsonU" target="_blank" class="creatorName">Elielson Urbano</a></p>    
+    </footer>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
