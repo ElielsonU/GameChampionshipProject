@@ -5,7 +5,10 @@ const timeRemaining = document.querySelector(".eventDate>var")
 const inputName = document.querySelector("#name")
 const inputEmail = document.querySelector("#email")
 const inputPass = document.querySelector("#pass")
-const inputGameMode = ""
+const gameSelect = document.querySelector("#game")
+let gameChoiced = ""
+
+// importing login button in case someone wants to use it
 const loginButton = document.querySelector(".loginButton")
 const registerButton = document.querySelector("#registerButton")
 
@@ -26,7 +29,7 @@ h1.addEventListener("mouseenter", e => {
     }, 5);
     setTimeout(() => {
         clearInterval(sumInterval)
-    }, 200);
+    }, 300);
 })
 
 h1.addEventListener("mouseleave", e => {
@@ -37,6 +40,21 @@ h1.addEventListener("mouseleave", e => {
         }
         setTimeout(() => {
             clearInterval(subInterval)
-        }, 200);
+        }, 300);
     }, 5);
 })
+
+gameSelect.onchange = e => gameChoiced = gameSelect.value
+
+registerButton.onclick = e => {
+    e.preventDefault()
+    const name = inputName.value
+    const email = inputEmail.value
+    const pass = inputPass.value
+    //you can use this values and the gameChoiced to make a request to some api  
+    if(name && email && pass && gameChoiced){
+        console.log(`name: ${name}\nemail: ${email}\npassword: ${pass}\ngame choiced: ${gameChoiced}`)
+    } else {
+        alert("missing values!")
+    }
+}
