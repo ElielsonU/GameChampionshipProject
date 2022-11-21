@@ -54,7 +54,5 @@ registerButton.onclick = e => {
     //you can use this values and the gameChoiced to make a request to some api  
     if(name && email && pass && gameChoiced){
         console.log(`name: ${name}\nemail: ${email}\npassword: ${pass}\ngame choiced: ${gameChoiced}`)
-    } else {
-        alert("missing values!")
-    }
+    } else { alert("missing values!") }
 }
