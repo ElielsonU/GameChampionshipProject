@@ -18,7 +18,7 @@ date2.setFullYear(2022)
 date2.setMonth(11)
 date2.setDate(10)
 
-timeRemaining.innerText = `${parseInt((date2 - date1) / (1000 * 60 * 60 * 24), 10) + 1} days to the event`
+timeRemaining.innerText = date2 - date1?`${parseInt((date2 - date1) / (1000 * 60 * 60 * 24), 10) + 1} days to the event`:"the event is over"
 
 h1.addEventListener("mouseenter", e => {
     const sumInterval = setInterval(() => {
