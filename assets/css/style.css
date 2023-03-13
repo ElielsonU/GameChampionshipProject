@@ -102,7 +102,7 @@ label {
 
 input {
     background: var(--c5);
-    border: var(--c1);
+    border: 1px solid var(--c2);
     border-radius: 3px;
     font-size: medium;
     box-shadow: none;
@@ -199,7 +199,7 @@ footer{
 }
 
 @media (min-width: 750px) and (min-height: 800px){
-    form { width: 50%; height: 300px; } 
+    form { width: 330px; height: 300px; } 
     .inputs { width: 70%; height: 50%; }
     input { height: 20px; }
 }
