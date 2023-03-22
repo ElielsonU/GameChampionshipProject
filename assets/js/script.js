@@ -13,7 +13,7 @@ const loginButton = document.querySelector(".loginButton")
 const registerButton = document.querySelector("#registerButton")
 
 const date1 = new Date()
-const date2 = new Date();
+const date2 = new Date()
 date2.setFullYear(2022)
 date2.setMonth(11)
 date2.setDate(10)

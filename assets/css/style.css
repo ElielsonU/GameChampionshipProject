@@ -2,7 +2,7 @@
     --c1: #e00000;
     --c2: #ffffff;
     --c3: #360e0ede;
-    --c4: #8a0505f6;
+    --c4: #c50000f6;
     --c5: black;
     height: 100%;
     font-family: Tourney;
@@ -16,7 +16,7 @@ span{
 }
 
 body {
-    background: url("/assets/icons/PageBack.jpg") center;
+    background: url("../icons/PageBack.jpg") center;
     color: var(--c2);
     height: 100%;
     margin: 0px;
